@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,200&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 1.8em;}
+p{ font-size: 1.25em;}
+
+button {
+    font-size: 1em;
+    font-weight: bold;     
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(33, 160, 33);
+}
+
+button:hover {
+    background-color: rgba(28, 110, 46, 0.911);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto
+}
+
+header {
+    background-color: rgba(245, 245, 245, 0.87);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(33, 160, 33);
+    font-size: 1.6em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: rgb(33, 160, 33);
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/poke-principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    color: white;
+}
+
+#hero button {
+    font-size: 1.75em;
+
+}
+
+.texto h2 {
+    text-align: center;
+    color: rgb(33, 160, 33);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.texto p {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 70px;
+}
+
+#carta h2 {
+    text-align: center;
+    color: rgb(255, 123, 0);
+}
+
+.pokes {
+    text-align: center;
+}
+
+.plato1, .plato2, .plato3{
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+
+.poke1 {
+    width:300px;
+    height:300px;
+    border-radius:150px;
+}
+
+.poke2 {
+    width:300px;
+    height:300px;
+    border-radius:150px;
+}
+
+.poke3 {
+    width:300px;
+    height:300px;
+    border-radius:150px;
+}
+
+footer {
+    background-color: rgb(31, 30, 30);
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(245,245,245);
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px) {
+
+    header  {
+        position: fixed;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1 {
+        font-size: 7em;
+    }
+
+    #somos .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #carta .pokes {
+        display: flex;
+        justify-content: center;
+    }
+
+    #carta p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    footer .container {
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+}
